@@ -10,7 +10,7 @@ import Navbar from './components/Header/Navbar';
 import NotFound from './components/Pages/NotFound/NotFound';
 function App() {
   return (
-      <>
+      <div className='max-w-[1440px] mx-auto'>
         <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}/>
@@ -22,7 +22,7 @@ function App() {
             <Route path='*' element={<NotFound/>}/>
         </Routes>
 
-      </>
+      </div>
   );
 }
 

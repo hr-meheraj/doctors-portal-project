@@ -1,8 +1,12 @@
 import React from 'react'
 import Cards from './Cards'
+import DoctorFeature from './DoctorFeature'
 import HeroBanner from './HeroBanner'
 import Services from './Services'
+import Testimonials from './Testimonials'
 import Treatment from './Treatment'
+import FeatureForm from './FeatureForm'
+import Footer from '../../Shared/Footer'
 
 function Home() {
     return (
@@ -11,6 +15,10 @@ function Home() {
             <Cards/>
             <Services/>
             <Treatment/>
+            <DoctorFeature/>
+            <Testimonials/>
+            <FeatureForm/>
+            <Footer/>
         </div>
     )
 }

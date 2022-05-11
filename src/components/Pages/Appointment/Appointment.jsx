@@ -1,9 +1,10 @@
 import React from 'react'
+import AppointmentHeader from './AppointmentHeader'
 
 function Appointment() {
     return (
         <div>
-            Appointment
+           <AppointmentHeader/>
         </div>
     )
 }
