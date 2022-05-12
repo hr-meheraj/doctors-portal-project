@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ServiceCard = ({service}) => {
+const ServiceCard = ({service,setModalData}) => {
     const {name, slots} = service;
     
     return(
@@ -16,7 +16,7 @@ const ServiceCard = ({service}) => {
     }
 
     <div class="card-actions justify-center">
-      <button class="btn btn-sm btn-primary text-white" disabled={slots.length < 1}>Book Now!</button>
+    <label for="booking-modal" class="btn btn-sm btn-primary text-white" onClick={() => setModalData(service)} disabled={slots.length < 1}>Book Now!</label>
     </div>
   </div>
 </div>
